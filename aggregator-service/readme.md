@@ -1,0 +1,1 @@
+aggregator service works as a client to consume grpc services.
