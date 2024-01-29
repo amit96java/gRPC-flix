@@ -19,9 +19,11 @@ import java.util.stream.Collectors;
 @Service
 public class UserMovieService {
 
+    //this user service client coming from properties file.
     @GrpcClient("user-service")
     private UserServiceGrpc.UserServiceBlockingStub userStub;
 
+    //this movie service client coming from properties file.
     @GrpcClient("movie-service")
     private MovieServiceGrpc.MovieServiceBlockingStub movieStub;
 
